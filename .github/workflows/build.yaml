@@ -5,10 +5,11 @@ on:
     branches:
       - main
 
-build:
-  name: Build and Deploy
-  needs: test
-  runs-on: ubuntu-latest
+jobs:
+  build:
+    name: Build and Deploy
+    needs: test
+    runs-on: ubuntu-latest
 
   steps:
     - name: Set up Docker Buildx

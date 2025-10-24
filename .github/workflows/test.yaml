@@ -7,8 +7,8 @@ on:
 
 # top-level call-out of the different tasks within the workflow
 jobs:
-# job id
-test:
+  # job id
+  test:
     name: Test
     runs-on: ubuntu-latest
 
